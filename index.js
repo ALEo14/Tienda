@@ -50,7 +50,7 @@ const productos = [
     precio: 25000,
   },
   {
-    id: "campera-01",
+    id: "campera-02",
     titulo: "campera-01",
     imagen: "fotos/campera-02.jfif",
     categoria: {
@@ -69,7 +69,7 @@ const numerito = document.querySelector(".numerito");
 
 
 function mostrarProductos(productos) {
-  contenedorProductos.innerHTML = "";
+  contenedorProductos.innerHTML = " ";
   productos.forEach((producto) => {
     const div = document.createElement("div");
     div.classList.add("producto");
@@ -116,8 +116,19 @@ function actualizarBotonesAgregar() {
     
   });
 }
-const productosEnCarrito = [];
-function agregarAlCarrito(e) {
+
+
+let productosEnCarrito ;
+let productosCarritoLS = localStorage.getItem("productosCarrito");
+if(productosCarritoLS){
+  productosEnCarrito = JSON.parse( productosCarritoLS);
+  actualizarNumerito();}
+  else{
+
+    productosEnCarrito = [];
+  }
+
+  function agregarAlCarrito(e) {
   const idBoton = e.currentTarget.id;
   const productoAgregado = productos.find((producto) => producto.id === idBoton);
   if (productosEnCarrito.some(producto => producto.id === idBoton) ) {
@@ -128,7 +139,7 @@ function agregarAlCarrito(e) {
     productosEnCarrito.push(productoAgregado);
   }
   actualizarNumerito();
-  localStorage.setItem("productosCarrito", JSON.stringify(productosEnCarrito));
+  localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
   
 }
 

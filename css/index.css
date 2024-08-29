@@ -130,9 +130,11 @@ main{
     flex-direction: column;
     gap:1.5;
 }
-.carritoVacio,.carritoComprado{
+.carritoVacio,
+.carritoComprado{
     color: rgb(89, 18, 146);
     display: none;
+    
 }
 .carritoProductos{
     display: flex;
@@ -149,7 +151,13 @@ main{
     color: rgb(89, 18, 146);
 }
 
-.carritoAccionesProduco small{
+.carritoProductoImagen{
+    width: 10rem;
+    
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.carritoProducto small{
     font-size: .75rem;
 
 }
