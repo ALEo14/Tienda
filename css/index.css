@@ -28,11 +28,11 @@ aside{
     gap: 1rem;
     font-weight: 600;
     padding: 1rem;
+    width: 100%;
 }
 .botonMenu.active{
     background-color: aliceblue;
     color: rgb(89, 18, 146);
-    width: 100%;
     border-top-left-radius:1rem ;
     border-bottom-left-radius: 1rem;
     position: relative;
@@ -96,7 +96,7 @@ main{
     gap:1rem;
 }
 .imgProducto{
-    max-width: 100%;
+    width: 100%;
     border-radius: 1rem;
 }
 .productoDetalles{
@@ -148,10 +148,7 @@ main{
     border-radius: 1rem;
     color: rgb(89, 18, 146);
 }
-.imgProducto{
-    width: 4rem;
-    border-radius: 1rem;
-}
+
 .carritoAccionesProduco small{
     font-size: .75rem;
 
