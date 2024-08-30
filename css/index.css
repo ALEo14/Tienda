@@ -124,6 +124,9 @@ main{
     color: aliceblue;
 
 }
+.headerMobile{
+    display:none;
+}
 /* Carrito  */
 .contenedorCarrito{
     display: flex;
@@ -207,4 +210,71 @@ margin-top: 2rem;
     text-transform: uppercase;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+}
+.cerrarMenuMobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    main{
+        margin: 1rem;
+        padding: 2rem;
+    }
+    .wrapper{
+        
+        padding: 1rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    aside{
+        position: fixed;
+        z-index: 9;
+        /* display: none; */
+        background-color: rgb(89, 18, 146);
+        left: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.2s;
+    }
+    .asideVisible{
+        transform: translateX(0);
+        opacity: 1; 
+        visibility: visible;
+    }
+    .contenedorProductos{
+        grid-template-columns: 1fr 1fr;
+    }
+    .botonMenu.active::before,
+    .botonMenu.active::after{
+        display: none;}
+
+    .botonMenu.active{
+        background-color: aliceblue;
+        color:rgb(89, 18, 146) ;
+    }
+    .headerMobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .abrirMenuMobile,
+    .cerrarMenuMobile{
+        border :0;
+        background-color: transparent;
+        color: aliceblue; 
+        font-size: 2rem;
+    }
+    .cerrarMenuMobile{
+        display: block;
+        position:absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .logoMobile{
+        background-color: aliceblue;
+    }
 }

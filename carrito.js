@@ -80,7 +80,7 @@ function actualizarBotonesEliminar() {
         // actualizarNumerito();  // Actualizar el contador del carrito
     }
 }
-botonVaciar.addEventListener('click', vaciarCarrito);
+// botonVaciar.addEventListener('click', vaciarCarrito);
 function  vaciarCarrito() { 
     productosEnCarrito.length=0;
     localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
