@@ -215,8 +215,19 @@ margin-top: 2rem;
     display: none;
 }
 
-
+@media screen and (max-width: 900px) {
+    .contenedorProductos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
 @media screen and (max-width: 800px) {
+    .contenedorProductos{
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+}
+@media screen and (max-width: 600px) {
     main{
         margin: 1rem;
         padding: 2rem;
@@ -277,4 +288,24 @@ margin-top: 2rem;
     .logoMobile{
         background-color: aliceblue;
     }
+    .carritoProducto{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    .carritoProductoSubtotal{
+        display: none;
+    }
+    .carritoAccionesTotal{
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .contenedorProductos{
+        grid-template-columns: 1fr  ;
+    }
+    
 }

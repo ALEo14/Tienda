@@ -1,0 +1,62 @@
+[
+    {
+      "id": "Camiseta-1",
+      "titulo": "Camiseta-01",
+      "imagen": "fotos/camiseta-01.jfif",
+      "categoria": {
+        "nombre": "Camisetas",
+        "id": "camisetas"
+      },
+      "precio": 1000
+    },
+    {
+      "id": "Camiseta-2",
+      "titulo": "Camiseta-2",
+      "imagen": "fotos/camiseta-2.jpeg",
+      "categoria": {
+        "nombre": "Camisetas",
+        "id": "camisetas"
+      },
+      "precio": 1000
+    },
+    {
+      "id": "Short-01",
+      "titulo": "Short-01",
+      "imagen": "fotos/short-01.jfif",
+      "categoria": {
+        "nombre": "short",
+        "id": "short"
+      },
+      "precio": 3000
+    },
+    {
+      "id": "Short-02",
+      "titulo": "Short-02",
+      "imagen": "fotos/short-02.jfif",
+      "categoria": {
+        "nombre": "short",
+        "id": "short"
+      },
+      "precio": 3000
+    },
+    {
+      "id": "campera-01",
+      "titulo": "campera-01",
+      "imagen": "fotos/campera-01.jfif",
+      "categoria": {
+        "nombre": "Campera",
+        "id": "Campera"
+      },
+      "precio": 25000
+    },
+    {
+      "id": "campera-02",
+      "titulo": "campera-01",
+      "imagen": "fotos/campera-02.jfif",
+      "categoria": {
+        "nombre": "Campera",
+        "id": "Campera"
+      },
+      "precio": 25000
+    }
+  ]
