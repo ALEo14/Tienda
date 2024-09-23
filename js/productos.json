@@ -40,21 +40,21 @@
       "precio": 3000
     },
     {
-      "id": "campera-01",
+      "id": "Campera-01",
       "titulo": "campera-01",
       "imagen": "fotos/campera-01.jfif",
       "categoria": {
-        "nombre": "Campera",
+        "nombre": "Camperas",
         "id": "Campera"
       },
       "precio": 25000
     },
     {
-      "id": "campera-02",
+      "id": "Campera-02",
       "titulo": "campera-01",
       "imagen": "fotos/campera-02.jfif",
       "categoria": {
-        "nombre": "Campera",
+        "nombre": "Camperas",
         "id": "Campera"
       },
       "precio": 25000

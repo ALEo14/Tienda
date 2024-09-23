@@ -136,8 +136,10 @@ main{
 .carritoVacio,
 .carritoComprado{
     color: rgb(89, 18, 146);
-    display: none;
     
+}
+.disabled{
+    display: none;
 }
 .carritoProductos{
     display: flex;
